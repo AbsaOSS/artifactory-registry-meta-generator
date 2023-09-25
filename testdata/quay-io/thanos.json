@@ -1,0 +1,12 @@
+{
+  "repo" : "quay-io-cache",
+  "path" : "/thanos",
+  "created" : "2023-02-21T21:28:31.111+02:00",
+  "lastModified" : "2023-02-21T21:28:31.111+02:00",
+  "lastUpdated" : "2023-02-21T21:28:31.111+02:00",
+  "children" : [ {
+    "uri" : "/thanos",
+    "folder" : true
+  } ],
+  "uri" : "https://jfrog.com/api/storage/quay-io-cache/thanos"
+}

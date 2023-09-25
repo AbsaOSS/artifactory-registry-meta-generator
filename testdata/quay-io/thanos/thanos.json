@@ -1,0 +1,18 @@
+{
+  "repo" : "quay-io-cache",
+  "path" : "/thanos/thanos",
+  "created" : "2023-02-21T21:28:31.115+02:00",
+  "lastModified" : "2023-02-21T21:28:31.115+02:00",
+  "lastUpdated" : "2023-02-21T21:28:31.115+02:00",
+  "children" : [ {
+    "uri" : "/sha256__e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e",
+    "folder" : true
+  }, {
+    "uri" : "/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b",
+    "folder" : true
+  }, {
+    "uri" : "/v0.31.0",
+    "folder" : true
+  } ],
+  "uri" : "https://jfrog.com/api/storage/quay-io-cache/thanos/thanos"
+}
