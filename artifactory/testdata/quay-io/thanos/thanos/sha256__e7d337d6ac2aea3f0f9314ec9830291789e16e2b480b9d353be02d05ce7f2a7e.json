@@ -1,0 +1,14 @@
+{
+  "repo" : "quay-io-cache",
+  "path" : "/thanos/thanos/sha256__e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e",
+  "created" : "2023-05-27T15:40:04.791+02:00",
+  "createdBy" : "anonymous",
+  "lastModified" : "2023-05-27T15:40:04.791+02:00",
+  "modifiedBy" : "anonymous",
+  "lastUpdated" : "2023-05-27T15:40:04.791+02:00",
+  "children" : [ {
+    "uri" : "/list.manifest.json",
+    "folder" : false
+  } ],
+  "uri" : "https://jfrog.com/api/storage/quay-io-cache/thanos/thanos/sha256__e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e"
+}

@@ -1,0 +1,22 @@
+{
+  "repo" : "quay-io-cache",
+  "path" : "/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/sha256__05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522",
+  "created" : "2023-05-27T15:40:12.924+02:00",
+  "createdBy" : "anonymous",
+  "lastModified" : "2023-03-23T12:29:39.000+02:00",
+  "modifiedBy" : "anonymous",
+  "lastUpdated" : "2023-05-27T15:40:12.926+02:00",
+  "downloadUri" : "https://jfrog.com/quay-io-cache/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/sha256__05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522",
+  "remoteUrl" : "https://quay.io/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/sha256__05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522",
+  "mimeType" : "application/octet-stream",
+  "size" : "38720042",
+  "checksums" : {
+    "sha1" : "6d3eae69ce0d84337d9c098c032a1c73476df552",
+    "md5" : "b96120fc2997163478a48b81d20ce4eb",
+    "sha256" : "05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522"
+  },
+  "originalChecksums" : {
+    "sha256" : "05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522"
+  },
+  "uri" : "https://jfrog.com/api/storage/quay-io-cache/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/sha256__05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522"
+}

@@ -1,0 +1,22 @@
+{
+  "repo" : "quay-io-cache",
+  "path" : "/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/manifest.json",
+  "created" : "2023-05-27T15:40:05.589+02:00",
+  "createdBy" : "anonymous",
+  "lastModified" : "2023-05-27T15:40:05.238+02:00",
+  "modifiedBy" : "anonymous",
+  "lastUpdated" : "2023-09-14T10:42:49.845+02:00",
+  "downloadUri" : "https://jfrog.com/quay-io-cache/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/manifest.json",
+  "remoteUrl" : "https://quay.io/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/manifest.json",
+  "mimeType" : "application/json",
+  "size" : "949",
+  "checksums" : {
+    "sha1" : "075760c4412592f8b8ff2482dbc2dd626e609677",
+    "md5" : "55d96b3865f3ab2e47613e4e25af6d7b",
+    "sha256" : "c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b"
+  },
+  "originalChecksums" : {
+    "sha256" : "c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b"
+  },
+  "uri" : "https://jfrog.com/api/storage/quay-io-cache/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/manifest.json"
+}
