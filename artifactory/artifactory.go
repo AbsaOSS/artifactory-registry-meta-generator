@@ -71,6 +71,7 @@ func (a *Artifactory) GetFilePaths() ([]File, error) {
 		if err != nil {
 			return nil, err
 		}
+		fmt.Printf("Found path %s\n", fileInfo.Path)
 		files = append(files, fileInfo)
 	}
 	return files, nil

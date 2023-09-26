@@ -15,13 +15,19 @@ func main() {
 	af, err := artifactory.CreateArtifactory()
 	if err != nil {
 		fmt.Printf("Error: %s\n", err)
+		return
 	}
 	s3client, err := s3client.NewS3Client(session.Must(session.NewSession()))
 	if err != nil {
 		fmt.Printf("Error: %s\n", err)
+		return
 	}
 
 	paths, err := af.GetFilePaths()
+	if len(paths) == 0 {
+		fmt.Println("Given path is emtpty")
+		return
+	}
 	if err != nil {
 		fmt.Printf("Error getting paths %s\n", err)
 		return
@@ -39,5 +45,6 @@ func main() {
 	err = s3client.Write(jsonStr)
 	if err != nil {
 		fmt.Printf("Failed to upload metadata to s3: %s\n", err)
+		return
 	}
 }

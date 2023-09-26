@@ -35,9 +35,9 @@ func (c *Client) Write(data []byte) error {
 		Body:   bytes.NewReader(data),
 	}
 	out, err := uploader.Upload(upParams)
-	fmt.Printf("Wrote metadata to %s\n", out.Location)
 	if err != nil {
 		return fmt.Errorf("failed to upload file, %v", err)
 	}
+	fmt.Printf("Wrote metadata to %s\n", out.Location)
 	return nil
 }
