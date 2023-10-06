@@ -25,6 +25,7 @@ func assertMaps[T, U comparable](m1 map[T]U, m2 map[T]U) bool {
 func TestGenerateMainfestMeta(t *testing.T) {
 	data := make(map[string]string)
 	fInfo := artifactory.File{
+		Repo: "quay-io-cache",
 		Path: "/thanos/thanos/v0.31.0/list.manifest.json",
 		Checksums: artifactory.Checksum{
 			SHA1:   "81a43c29d4f6cda7180fd4b59b7ce50ae6243f8e",
@@ -33,9 +34,9 @@ func TestGenerateMainfestMeta(t *testing.T) {
 		},
 	}
 	expected := map[string]string{
-		"/docker/registry/v2/blobs/sha256/e7/e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e/data":                                        "81a43c29d4f6cda7180fd4b59b7ce50ae6243f8e",
-		"/docker/registry/v2/repositories/thanos/thanos/_manifests/revisions/sha256/e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e/link": "e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e",
-		"/docker/registry/v2/repositories/thanos/thanos/_manifests/tags/v0.31.0/current/link":                                                              "e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e",
+		"/docker/registry/v2/blobs/sha256/e7/e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e/data":                                                "81a43c29d4f6cda7180fd4b59b7ce50ae6243f8e",
+		"/docker/registry/v2/repositories/quay-io/thanos/thanos/_manifests/revisions/sha256/e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e/link": "e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e",
+		"/docker/registry/v2/repositories/quay-io/thanos/thanos/_manifests/tags/v0.31.0/current/link":                                                              "e7d337d6ac2aea3f0f9314ec9830291789e16e2b480b9d353be02d05ce7f2a7e",
 	}
 
 	generateMeta(fInfo, data)
@@ -46,6 +47,7 @@ func TestGenerateMainfestMeta(t *testing.T) {
 func TestGenerateBlobMeta(t *testing.T) {
 	data := make(map[string]string)
 	fInfo := artifactory.File{
+		Repo: "quay-io-cache",
 		Path: "/thanos/thanos/sha256__c02f71e18dcecb69d4ce396ddbbe53829330146996baa09a41602152aa55742b/sha256__05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522",
 		Checksums: artifactory.Checksum{
 			SHA1:   "6d3eae69ce0d84337d9c098c032a1c73476df552",
@@ -54,8 +56,8 @@ func TestGenerateBlobMeta(t *testing.T) {
 		},
 	}
 	expected := map[string]string{
-		"/docker/registry/v2/blobs/sha256/05/05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522/data":                           "6d3eae69ce0d84337d9c098c032a1c73476df552",
-		"/docker/registry/v2/repositories/thanos/thanos/_layers/sha256/05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522/link": "05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522",
+		"/docker/registry/v2/blobs/sha256/05/05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522/data":                                   "6d3eae69ce0d84337d9c098c032a1c73476df552",
+		"/docker/registry/v2/repositories/quay-io/thanos/thanos/_layers/sha256/05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522/link": "05a2d9e5b341387ae9426a3040b6be2f33e5695a7ade88916f5990ca69b16522",
 	}
 
 	generateMeta(fInfo, data)

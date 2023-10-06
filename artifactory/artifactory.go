@@ -28,6 +28,7 @@ type path struct {
 type File struct {
 	Checksums Checksum `json:"checksums"`
 	Path      string   `json:"path"`
+	Repo      string   `json:"repo"`
 }
 
 type Checksum struct {
